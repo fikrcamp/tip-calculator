@@ -2,21 +2,25 @@
 // Write your code here.
 
 
-   let bill = 400;
-   let tip = 0;
-    let final = bill + (tip * bill);
+
+function tipCalc(bill){
 
      if (bill >= 50 && bill <= 300){
-        tip = 15/100;
+     let  tip = 15/100;
        final = bill + (tip * bill);
-        
+        return console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${final}`);
+;
      }
      else {
         tip = 20/100;
-        final = bill + (tip * bill)
+        final = bill + (tip * bill);
+          return console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${final}`);
+;
        
      }
+    }
+tipCalc(400);
+tipCalc(300);
 
-console.log(`The bill was ${bill} the tip was ${tip} and the total value is`,final);
 
 
