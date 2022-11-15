@@ -7,3 +7,10 @@ if(bill > 50 && bill < 300){
 }else{
     console.log("no tip")
 }
+
+//Now I'm using function to callculate tip calculation
+function calculateSupply(age, amount){
+    
+    console.log(`You will need ${amount} to last you until the old age of ${age}`)
+}
+calculateSupply(24,24*3)
