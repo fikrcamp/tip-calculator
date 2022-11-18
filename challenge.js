@@ -1,10 +1,12 @@
 // Good Luck! You got this 💪🏾
 // Write your code here.
 
-function calculateSupply(age,amountperday){
-    let amountNeed= age*amountperday;
-    console.log( "You will need" +amountNeed+ "to last you until the old age of" +age)
-}
+let bill = 310
 
-calculateSupply(40,3);
-calculateSupply(20,5)
+if(bill > 50 && bill < 300){
+  let tip = bill * 0.15 
+  console.log(`the was is ${bill} and tip ${tip} the total was ${bill+tip}`)
+}else if(bill=+300){
+    let tip = bill * 0.2 
+    console.log(`the was is ${bill} and tip ${tip} the total was ${bill+tip}`)
+}
